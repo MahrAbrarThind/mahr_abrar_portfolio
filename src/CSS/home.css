@@ -6,17 +6,9 @@
   justify-content: center;
   gap: 200px;
   padding-top: 80px;
-  /* padding: 80px; */
   height: 100vh;
-  /* background-color: #03031f; */
-  /* background-color: #000014; */
-  /* background-color: #05050e; */
-
-  /* background-color: #191f36; */
-
-  /* background-color: #1a1a2e; */
-
   color: white;
+  position: relative;
 }
 
 .textContainer {
@@ -41,25 +33,17 @@
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  /* font-family: 'Raleway', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Montserrat', sans-serif;
   height: 50px;
-  /* color: #adb660; */
-  /* color: rgb(65, 204, 65); */
 }
 
 .name {
   font-size: 40px;
   font-weight: bold;
-  color: white;
+  color: #c9ccb2;
   text-align: center;
   letter-spacing: 3px;
-  color: #c9ccb2;
-
   font-family: 'Playfair Display', serif;
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
 }
 
 .skill {
@@ -68,25 +52,14 @@
   height: 100px;
   text-align: center;
   letter-spacing: 2px;
-
-  /* color: #d2d5b5; */
   color: white;
-
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-
 .buttons {
-  /* margin-top: 10px; */
   display: flex;
   gap: 25px;
 }
-
-
 
 .button {
   cursor: pointer;
@@ -115,13 +88,7 @@
   height: 100%;
   padding: var(--border-width);
   border-radius: var(--border-radius);
-  background-image: conic-gradient(#488cfb,
-      #29dbbc,
-      #acb92f,
-      #ff9f0e,
-      #e440bb,
-      #655adc,
-      #488cfb);
+  background-image: conic-gradient(#488cfb, #29dbbc, #acb92f, #ff9f0e, #e440bb, #655adc, #488cfb);
   -webkit-mask-image: var(--m-i), var(--m-i);
   mask-image: var(--m-i), var(--m-i);
   -webkit-mask-origin: var(--m-o);
@@ -165,11 +132,9 @@
 
 .button span i {
   font-size: 20px;
-  /* Adjust icon size */
   transition: transform 0.5s ease-in-out;
 }
 
-/* Animation for download button */
 .download-button:hover span i {
   animation: arrow-move 1s ease-in-out forwards;
 }
@@ -195,7 +160,6 @@
   }
 }
 
-/* Animation for eye button */
 .eye-button:hover span i {
   animation: blink 0.7s steps(1);
 }
@@ -211,11 +175,6 @@
     transform: scaleY(0.1);
   }
 }
-
-
-
-
-
 
 .scroll-button {
   position: absolute;
@@ -243,25 +202,19 @@
   animation: bounce 1.2s infinite 0.09s;
 }
 
-
 @keyframes bounce {
 
   0%,
   100% {
     transform: translateY(0) rotate(45deg);
     border-width: 1px;
-    /* border-color: transparent; */
   }
 
   50% {
     transform: translateY(20px) rotate(45deg);
     border-width: 2px;
-
   }
 }
-
-
-
 
 .socialMediaBar {
   position: absolute;
@@ -274,8 +227,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   background-color: #f1f1f1;
-  border-radius:7px;
-
+  border-radius: 7px;
 }
 
 .socialMediaBar a {
@@ -297,4 +249,84 @@
 .socialMediaBar i {
   color: #333;
   font-size: 24px;
+}
+
+/* Responsiveness Code is here */
+@media (max-width: 1300px) {
+  .homeContainer {
+    flex-direction: column-reverse;
+    gap: 70px;
+    padding-top: 180px;
+    height: auto;
+    justify-content: flex-start;
+  }
+
+  .textContainer {
+    width: 80%;
+  }
+
+  .homeContainer img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hello {
+    font-size: 40px;
+
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .skill {
+    font-size: 30px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .socialMediaBar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: none;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .socialMediaBar a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-button {
+    position: none;
+    display: none;
+  }
+}
+
+@media (max-width:400px) {
+  .homeContainer img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .hello {
+    font-size: 40px;
+
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .skill {
+    font-size: 25px;
+  }
+
 }
