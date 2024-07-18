@@ -68,7 +68,6 @@ const About = () => {
             Let's collaborate and build something amazing together.
           </p>
         </div>
-
         <div className="aboutSkills">
           <p
             ref={skillsHeadingRef}
@@ -77,7 +76,7 @@ const About = () => {
             Skills
           </p>
 
-          <div className="container">
+          <div className="skillsContainer">
             <div className="skill">
               <div className="percentage">
                 <p>SQL</p>
