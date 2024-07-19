@@ -10,13 +10,14 @@
 .contact-form {
   background: #1e1e2a;
   /* background: #1a1a21; */
-  background-color: #d6cece;
+  /* background-color: #d6cece; */
+  background-color: #ddddcd;
   padding: 60px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 209, 255, 0.5);
   /* box-shadow: 0 0 20px rgba(48, 47, 46, 0.5); */
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -86,11 +87,12 @@
   margin-top: 20px;
   border: 2px solid black;
   color: black;
-  padding: 10px 30px;
+  padding: 10px 40px;
   cursor: pointer;
-  border-radius: 15px;
+  border-radius: 10px;
   transition:all  0.7s;
   font-size: 20px;
+  background-color: #ecdbdb;
 }
 
 .contactBtn:hover {
