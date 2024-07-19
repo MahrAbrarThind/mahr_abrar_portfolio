@@ -206,3 +206,10 @@
         transform: rotate(-45deg);
     }
 }
+
+@media (max-width: 768px) {
+    .logoContainer {
+        width: 75px;
+        height: 75px;
+    }
+}
