@@ -5,6 +5,13 @@ import useProjectVisibility from './UseProjectVisibility'; // Import the custom 
 const Projects = () => {
   const projects = [
     {
+      title:'MeerKonnect',
+      side : 'right',
+      img:'MeerKonnect.png',
+      description:'A responsive e-commerce store where admins can manage products, categories, and pricing, while users can browse products, apply filters, add items to the cart, and securely complete their purchases.',
+      date: " August 2024"
+    },
+    {
       title: 'Ride Reserve',
       side: 'left',
       img: 'rideReserver.png',
