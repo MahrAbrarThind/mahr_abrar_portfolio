@@ -1,8 +1,22 @@
 import React from 'react';
 import 'animate.css/animate.min.css'; // Import animate.css
 import useProjectVisibility from './UseProjectVisibility'; // Import the custom hook
-
 const Projects = () => {
+  const showProject = (title) => {
+    if(title==="MeerKonnect"){
+      window.open("https://meer-konnect.vercel.app", "_blank");
+    }else if(title==="Edu Spark"){
+      window.open("https://eduspark-virid.vercel.app", "_blank");
+    }
+    else
+    {
+      return;
+    }
+
+  };
+  
+
+
   const projects = [
     {
       title:'MeerKonnect',
@@ -65,7 +79,7 @@ const Projects = () => {
                 className={`timeline-card ${project.side} animate__animated ${isVisible ? animationClass : ''}`}
                 style={{ opacity: isVisible ? 1 : 0 }}
               >
-                <div className="timeline-content">
+                <div className="timeline-content" onClick={() => showProject(project.title)} >
                   <div className="card-front">
                     <img src={project.img} alt={project.title} />
                     <h3>{project.title}</h3>
